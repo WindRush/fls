@@ -38,8 +38,12 @@ android {
 dependencies {
 
     implementation(libs.androidx.core.ktx)
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
+    implementation("androidx.activity:activity-ktx:1.7.0")
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
+    implementation("com.squareup.retrofit2:converter-gson:2.6.0")
+    implementation("com.github.bumptech.glide:glide:4.11.0")
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
