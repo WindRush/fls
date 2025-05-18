@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.baselineprofile)
 }
 
 android {
@@ -44,7 +45,9 @@ dependencies {
     implementation(libs.material)
     implementation("com.squareup.retrofit2:converter-gson:2.6.0")
     implementation("com.github.bumptech.glide:glide:4.11.0")
+    implementation(libs.androidx.profileinstaller)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    "baselineProfile"(project(":app:baselineprofile"))
 }

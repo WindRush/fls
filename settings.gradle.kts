@@ -21,4 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "fls"
 include(":app")
- 
+include(":app:baselineprofile")
